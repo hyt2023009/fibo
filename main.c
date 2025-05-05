@@ -1,18 +1,17 @@
 #include <stdlib.h> 
 #include <stdio.h> 
-#include "fibo.h" 
-   
-int main (int argc, char * argv []) 
-{ 
-	long ret; 
+#include “fibo.h” 
+	
+int main (int argc, char * argv []) { 
+       	long ret; 
 	int n; 
-	if (argc<2){ 
-		fprintf (stderr, "missing index.\n"); 
-		return -1; 
-	} 
+       	if (argc<2){ 
+	   	printf (stderr, “missing index.\n”);
+	  	return -1; 
+       	} 
 	n=atoi (argv [1]); 
 	ret = fibo (n); 
-	printf ("Fibo (%d) is %ld\n",n,ret); 
-	return EXIT_SUCCESS; 
-}
+     	printf (“fibo (%d) is %ld\n”,n,ret); 
+      	return EXIT_SUCCESS;
+} 
 
